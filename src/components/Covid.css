@@ -1,0 +1,100 @@
+/*  Basic Styling but it will help you  */
+body {
+    background: radial-gradient(#d5e8ed 80%, rgba(223, 29, 29, 0) 100%) !important;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+h1{
+    transition: 0s;
+    transform: scale(1.1);
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-flow: wrap;
+    
+}
+
+ul li:nth-child(1) {
+    background: #4571c0;
+}
+ul li:nth-child(2){
+    background-color: #43a943 !important;
+}
+ul li:nth-child(3){
+    background-color: #fdc24b !important;
+}
+ul li:nth-child(4){
+    background-color: #ff4343 !important;
+}
+ul li:nth-child(5) {
+    background-color: #5353f5!important;
+}
+ul li:nth-child(6) {
+    background-color: #7b7b44 !important;
+}
+
+.card {
+    width: calc(76%/3);
+    margin: 2%;
+    padding: 2%;
+    text-align: center;
+    transition: 0.3s;
+   }
+
+.card:hover{
+    transform:scale(1.1);
+} 
+
+.card__name {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.card__name span {
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.card__total {
+    font-size: 62px;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 4px 1px 1px #ccccd3;
+    text-transform: uppercase;
+    height: 80px;
+}
+
+  
+ .heading:hover {
+    transform:scale(1.1);
+    transform-origin: bottom center;
+  }
+
+@media (max-width:600px){
+    .card {
+        width: calc(245%/3) !important;
+        margin: 2%;
+        padding: 2%;
+        text-align: center;
+        transition: 0.3s;
+        height: 50%;
+    }
+
+    .card__total {
+        font-size: 42px;
+        font-weight: bold;
+        color: #fff;
+        text-shadow: 6px 5px 3px rgb(105, 105, 190);
+        text-transform: uppercase;
+        height: 80px;
+    }
+}
+
